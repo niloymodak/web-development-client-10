@@ -9,6 +9,7 @@ import Logo from '../../../assests/images/Logo.jpg'
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import Image from 'react-bootstrap/Image'
 import { Button } from 'react-bootstrap';
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -35,7 +36,7 @@ const Header = () => {
                         </Nav>
                         <Nav>
                             <Nav.Link>
-                                <Button className='me-3'>Theme</Button>
+                                <BootstrapSwitchButton checked={true} onstyle="light" offstyle="dark" style="border" />
                                 {
                                     user?.uid ?
                                         <>
@@ -44,7 +45,7 @@ const Header = () => {
                                         </>
                                         :
                                         <>
-                                            <Link style={{ textDecoration: 'none' }} className='me-3 text-white-50' to={'/login'}>Login</Link>
+                                            <Link style={{ textDecoration: 'none' }} className='ms-3 me-3 text-white-50' to={'/login'}>Login</Link>
                                             <Link style={{ textDecoration: 'none' }} className='me-3 text-white-50' to={'/register'}>Register</Link>
                                         </>
                                 }

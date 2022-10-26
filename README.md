@@ -1,11 +1,11 @@
 Short information of my website
 
-=>Website name: 
+=>Website name: Web Development
  
 =>Live site link:
 
-=> This website is benefit for who want to became a web developer
 => I use a framework which name is bootstrap
 => Hosting and Deploy in firebase
 => Server site deploy in vercel
+=> Install Bootstrap Switch Button for toggle button
 => Create a google,  login and password

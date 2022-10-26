@@ -60,7 +60,7 @@ const Home = () => {
                 </Carousel>
             </div>
             <div className='mt-3 d-flex justify-content-center'>
-                <Link to='/course'><Button className=''>Get premium access</Button></Link>
+                <Link to='/course'><Button>Get premium access</Button></Link>
             </div>
         </div>
     );
