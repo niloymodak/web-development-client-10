@@ -36,7 +36,7 @@ const Header = () => {
                         </Nav>
                         <Nav>
                             <Nav.Link>
-                                <BootstrapSwitchButton checked={true} onstyle="light" offstyle="dark" style="border" />
+                                <BootstrapSwitchButton checked={true} onstyle="light" offstyle="dark" />
                                 {
                                     user?.uid ?
                                         <>

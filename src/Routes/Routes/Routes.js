@@ -23,12 +23,12 @@ export const routes = createBrowserRouter([
             {
                 path: '/category/:id',
                 element: <PrivateRoute><Category></Category></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({ params }) => fetch(`https://learning-platform-server-rosy.vercel.app/category/${params.id}`)
             },
             {
                 path: '/course',
                 element: <Course></Course>,
-                loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`)
+                loader: ({ params }) => fetch(`https://learning-platform-server-rosy.vercel.app/course/${params.id}`)
             },
             {
                 path: '/login',
