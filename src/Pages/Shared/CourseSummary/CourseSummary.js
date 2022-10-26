@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image'
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaDownload, FaFilePdf } from "react-icons/fa";
 
 const CourseSummary = ({ course }) => {
     const { title, teacher, details, image_url, rating, total_class } = course;
@@ -9,8 +9,8 @@ const CourseSummary = ({ course }) => {
     return (
         <div>
             <Card className="mb-5">
-                <Card.Header>
-                    <div className='d-flex '>
+                <Card.Header className='d-flex'>
+                    <div className='d-flex'>
                         <Image
                             roundedCircle
                             className='me-3'
@@ -22,8 +22,9 @@ const CourseSummary = ({ course }) => {
                             <p>Class Starting: {teacher?.starting_date}</p>
                         </div>
                     </div>
-                    <div>
-
+                    <div className='d-flex align-items-center'>
+                        <FaDownload className='me-2'></FaDownload>
+                        <FaFilePdf></FaFilePdf>
                     </div>
                 </Card.Header>
                 <Card.Body>

@@ -6,19 +6,10 @@ import BOOTSTRAP from '../../assests/images/BOOTSTRAP.jpg'
 import TAILWIND from '../../assests/images/TAILWIND.jpg'
 import JAVA from '../../assests/images/JAVA.png'
 import REACT from '../../assests/images/REACT.png'
-// import { useEffect } from 'react';
-// import { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const Home = () => {
-
-    // const [categories, setCategories] = useState([]);
-
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/course-categories')
-    //         .then(res => res.json())
-    //         .then(data => setCategories(data));
-    // }, [])
 
     return (
         <div>
@@ -68,16 +59,9 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            {/* <div className='mt-5'>
-                <h3 className='text-center'>All Course</h3>
-                <div className='mt-3 d-flex justify-content-between' >
-                    {
-                        categories.map(category => <p key={category.id}>
-                            <Link style={{ textDecoration: 'none' }} to={`/category/${category.id}`}> {category.name}</Link>
-                        </p>)
-                    }
-                </div>
-            </div> */}
+            <div className='mt-3 d-flex justify-content-center'>
+                <Link to='/course'><Button className='position-fixed'>Get premium access</Button></Link>
+            </div>
         </div>
     );
 };
