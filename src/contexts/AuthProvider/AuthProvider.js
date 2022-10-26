@@ -17,6 +17,11 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, provider);
     }
 
+    const providerGitLogin = (provider) => {
+        setLoading(true);
+        return signInWithPopup(auth, provider);
+    }
+
     const createUser = (email, password) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
@@ -55,7 +60,8 @@ const AuthProvider = ({ children }) => {
         updateUserProfile,
         createUser,
         signIn,
-        logOut
+        logOut,
+        providerGitLogin
     };
 
     return (
