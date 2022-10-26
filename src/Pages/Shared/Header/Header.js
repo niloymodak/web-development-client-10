@@ -31,10 +31,10 @@ const Header = () => {
                             <Link style={{ textDecoration: 'none' }} className='me-3 text-white-50' to={'/'}>Home</Link>
                             <Link style={{ textDecoration: 'none' }} className='me-3 text-white-50' to={'/course'}>Courses</Link>
                             <Link style={{ textDecoration: 'none' }} className='me-3 text-white-50' to={'/blog'}>Blog</Link>
-                            <Link style={{ textDecoration: 'none' }} className='me-3 text-white-50' to={'/faq'}>FAQ</Link>
+                            <Link style={{ textDecoration: 'none' }} className='me-3 text-white-50' to={'*'}>FAQ</Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">
+                            <Nav.Link>
                                 <Button className='me-3'>Theme</Button>
                                 {
                                     user?.uid ?

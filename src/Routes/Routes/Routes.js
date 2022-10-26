@@ -46,10 +46,10 @@ export const routes = createBrowserRouter([
                 path: '/blog',
                 element: <Blog></Blog>
             },
-            {
-                path: '/faq',
-                element: <FAQ></FAQ>
-            }
         ]
+    },
+    {
+        path: '*',
+        element: <FAQ></FAQ>
     }
 ])

@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 const Footer = () => {
     return (
-        <div className='d-flex justify-content-center bg-dark mt-5 page-footer fixed-bottom '>
+        <div className='d-flex justify-content-center bg-dark mt-5'>
             <div>
                 <h5 className='mt-4 text-white-50 text-center'>Follow Us On</h5>
                 <div className='d-flex'>

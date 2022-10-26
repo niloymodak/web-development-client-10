@@ -23,7 +23,7 @@ const CourseSummary = ({ course }) => {
                         </div>
                     </div>
                     <div className='d-flex align-items-center'>
-                        <FaDownload className='me-2'></FaDownload>
+                        <FaDownload className='ms-2 me-2'></FaDownload>
                         <FaFilePdf></FaFilePdf>
                     </div>
                 </Card.Header>
@@ -34,7 +34,7 @@ const CourseSummary = ({ course }) => {
                         {details}
                     </Card.Text>
                 </Card.Body>
-                <Card.Footer className="d-flex justify-content-between mb-5">
+                <Card.Footer className="d-flex justify-content-between">
                     <div>
                         Total Class: {total_class}
                     </div>
